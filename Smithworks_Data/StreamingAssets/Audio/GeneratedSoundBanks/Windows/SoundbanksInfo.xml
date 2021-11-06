@@ -11,22 +11,25 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3443932380">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2964194825">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+			</IncludedAuxBusses>
 			<GameParameters>
 				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\SFXVolume"/>
 				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MusicVolume"/>
 				<GameParameter Id="2918011349" Name="MasterVolume" ObjectPath="\Game Parameters\Default Work Unit\Volume\MasterVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4008144306">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1707943973">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1152134283" Name="BookPageTurn_event" ObjectPath="\Events\Default Work Unit\BookPageTurn_event" DurationType="OneShot" DurationMin="0.750000" DurationMax="1.000000">
+				<Event Id="1152134283" Name="BookPageTurn_event" ObjectPath="\Events\Default Work Unit\BookPageTurn_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.750000" DurationMax="1.000000">
 					<IncludedMemoryFiles>
 						<File Id="187639547" Language="SFX">
 							<ShortName>Book Page 1_3.wav</ShortName>
@@ -78,31 +81,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3471816780" Name="IronGrab_event" ObjectPath="\Events\Default Work Unit\IronGrab_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.250000" DurationMax="1.500000">
-					<IncludedMemoryFiles>
-						<File Id="53386985" Language="SFX">
-							<ShortName>Weapon Draw Metal 20.wav</ShortName>
-							<Path>SFX/Weapon Draw Metal 20_10C4C929.wem</Path>
-						</File>
-						<File Id="139643464" Language="SFX">
-							<ShortName>Weapon Draw Metal 19.wav</ShortName>
-							<Path>SFX/Weapon Draw Metal 19_10C4C929.wem</Path>
-						</File>
-						<File Id="775080918" Language="SFX">
-							<ShortName>Weapon Draw Metal 18.wav</ShortName>
-							<Path>SFX/Weapon Draw Metal 18_10C4C929.wem</Path>
-						</File>
-						<File Id="850935612" Language="SFX">
-							<ShortName>Weapon Draw Metal 16.wav</ShortName>
-							<Path>SFX/Weapon Draw Metal 16_10C4C929.wem</Path>
-						</File>
-						<File Id="1066527804" Language="SFX">
-							<ShortName>Weapon Draw Metal 17.wav</ShortName>
-							<Path>SFX/Weapon Draw Metal 17_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1311208364" Name="IronImpact_event" ObjectPath="\Events\Default Work Unit\IronImpact_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.500000" DurationMax="2.250000">
+				<Event Id="4017566518" Name="IronCraft_event" ObjectPath="\Events\Default Work Unit\RefinedMaterial\IronCraft_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.500000" DurationMax="2.250000">
 					<IncludedMemoryFiles>
 						<File Id="137454596" Language="SFX">
 							<ShortName>Blacksmith 3_9.wav</ShortName>
@@ -146,12 +125,140 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="411017225" Name="WoodGrab_event" ObjectPath="\Events\Default Work Unit\WoodGrab_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.500000" DurationMax="1.000000">
+				<Event Id="3471816780" Name="IronGrab_event" ObjectPath="\Events\Default Work Unit\RefinedMaterial\IronGrab_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.250000" DurationMax="1.500000">
 					<IncludedMemoryFiles>
-						<File Id="34350570" Language="SFX">
-							<ShortName>Weapon Draw Wood 04.wav</ShortName>
-							<Path>SFX/Weapon Draw Wood 04_10C4C929.wem</Path>
+						<File Id="53386985" Language="SFX">
+							<ShortName>Weapon Draw Metal 20.wav</ShortName>
+							<Path>SFX/Weapon Draw Metal 20_10C4C929.wem</Path>
 						</File>
+						<File Id="139643464" Language="SFX">
+							<ShortName>Weapon Draw Metal 19.wav</ShortName>
+							<Path>SFX/Weapon Draw Metal 19_10C4C929.wem</Path>
+						</File>
+						<File Id="775080918" Language="SFX">
+							<ShortName>Weapon Draw Metal 18.wav</ShortName>
+							<Path>SFX/Weapon Draw Metal 18_10C4C929.wem</Path>
+						</File>
+						<File Id="850935612" Language="SFX">
+							<ShortName>Weapon Draw Metal 16.wav</ShortName>
+							<Path>SFX/Weapon Draw Metal 16_10C4C929.wem</Path>
+						</File>
+						<File Id="1066527804" Language="SFX">
+							<ShortName>Weapon Draw Metal 17.wav</ShortName>
+							<Path>SFX/Weapon Draw Metal 17_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1311208364" Name="IronImpact_event" ObjectPath="\Events\Default Work Unit\RefinedMaterial\IronImpact_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.000000" DurationMax="2.011361">
+					<IncludedMemoryFiles>
+						<File Id="370008852" Language="SFX">
+							<ShortName>Weapon UI 17.wav</ShortName>
+							<Path>SFX/Weapon UI 17_10C4C929.wem</Path>
+						</File>
+						<File Id="370378258" Language="SFX">
+							<ShortName>Weapon UI 18.wav</ShortName>
+							<Path>SFX/Weapon UI 18_10C4C929.wem</Path>
+						</File>
+						<File Id="460260031" Language="SFX">
+							<ShortName>Weapon UI 20.wav</ShortName>
+							<Path>SFX/Weapon UI 20_10C4C929.wem</Path>
+						</File>
+						<File Id="488086641" Language="SFX">
+							<ShortName>Weapon UI 16.wav</ShortName>
+							<Path>SFX/Weapon UI 16_10C4C929.wem</Path>
+						</File>
+						<File Id="652629322" Language="SFX">
+							<ShortName>Weapon UI 19.wav</ShortName>
+							<Path>SFX/Weapon UI 19_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1668712567" Name="MenuNeutralUI" ObjectPath="\Events\Default Work Unit\MenuUI\MenuNeutralUI" DurationType="OneShot" DurationMin="2.750000" DurationMax="2.750000">
+					<IncludedMemoryFiles>
+						<File Id="30045292" Language="SFX">
+							<ShortName>UI Click 35.wav</ShortName>
+							<Path>SFX/UI Click 35_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1008257083" Name="MenuPositiveUI" ObjectPath="\Events\Default Work Unit\MenuUI\MenuPositiveUI" DurationType="OneShot" DurationMin="4.160249" DurationMax="4.160249">
+					<IncludedMemoryFiles>
+						<File Id="81402127" Language="SFX">
+							<ShortName>Special Click 44.wav</ShortName>
+							<Path>SFX/Special Click 44_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2635774144" Name="PlayerRun_event" ObjectPath="\Events\Default Work Unit\Player\PlayerRun_event" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.540615" DurationMax="0.848930">
+					<IncludedMemoryFiles>
+						<File Id="331368934" Language="SFX">
+							<ShortName>footstep_grass_000.wav</ShortName>
+							<Path>SFX/footstep_grass_000_10C4C929.wem</Path>
+						</File>
+						<File Id="523135078" Language="SFX">
+							<ShortName>footstep_grass_003.wav</ShortName>
+							<Path>SFX/footstep_grass_003_10C4C929.wem</Path>
+						</File>
+						<File Id="717119199" Language="SFX">
+							<ShortName>footstep_grass_004.wav</ShortName>
+							<Path>SFX/footstep_grass_004_10C4C929.wem</Path>
+						</File>
+						<File Id="740001157" Language="SFX">
+							<ShortName>footstep_grass_001.wav</ShortName>
+							<Path>SFX/footstep_grass_001_10C4C929.wem</Path>
+						</File>
+						<File Id="767527508" Language="SFX">
+							<ShortName>footstep_grass_002.wav</ShortName>
+							<Path>SFX/footstep_grass_002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="441436208" Name="PlayerWalk_event" ObjectPath="\Events\Default Work Unit\Player\PlayerWalk_event" MaxAttenuation="20.000000" DurationType="OneShot" DurationMin="0.137995" DurationMax="0.177584">
+					<IncludedMemoryFiles>
+						<File Id="172749540" Language="SFX">
+							<ShortName>footstep_concrete_001.wav</ShortName>
+							<Path>SFX/footstep_concrete_001_10C4C929.wem</Path>
+						</File>
+						<File Id="291362276" Language="SFX">
+							<ShortName>footstep_concrete_004.wav</ShortName>
+							<Path>SFX/footstep_concrete_004_10C4C929.wem</Path>
+						</File>
+						<File Id="334914286" Language="SFX">
+							<ShortName>footstep_concrete_003.wav</ShortName>
+							<Path>SFX/footstep_concrete_003_10C4C929.wem</Path>
+						</File>
+						<File Id="847884205" Language="SFX">
+							<ShortName>footstep_concrete_002.wav</ShortName>
+							<Path>SFX/footstep_concrete_002_10C4C929.wem</Path>
+						</File>
+						<File Id="1023224806" Language="SFX">
+							<ShortName>footstep_concrete_000.wav</ShortName>
+							<Path>SFX/footstep_concrete_000_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2954371533" Name="WoodCraft_event" ObjectPath="\Events\Default Work Unit\RefinedMaterial\WoodCraft_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.189682" DurationMax="1.250000">
+					<IncludedMemoryFiles>
+						<File Id="459519549" Language="SFX">
+							<ShortName>Saw Wood 6_2.wav</ShortName>
+							<Path>SFX/Saw Wood 6_2_10C4C929.wem</Path>
+						</File>
+						<File Id="508884202" Language="SFX">
+							<ShortName>Saw Wood 7_8.wav</ShortName>
+							<Path>SFX/Saw Wood 7_8_10C4C929.wem</Path>
+						</File>
+						<File Id="624193893" Language="SFX">
+							<ShortName>Saw Wood 7_3.wav</ShortName>
+							<Path>SFX/Saw Wood 7_3_10C4C929.wem</Path>
+						</File>
+						<File Id="830317192" Language="SFX">
+							<ShortName>Saw Wood 5_5.wav</ShortName>
+							<Path>SFX/Saw Wood 5_5_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="411017225" Name="WoodGrab_event" ObjectPath="\Events\Default Work Unit\RefinedMaterial\WoodGrab_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="0.500000" DurationMax="1.000000">
+					<IncludedMemoryFiles>
 						<File Id="40731165" Language="SFX">
 							<ShortName>Weapon Draw Wood 01.wav</ShortName>
 							<Path>SFX/Weapon Draw Wood 01_10C4C929.wem</Path>
@@ -182,7 +289,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1958629785" Name="WoodImpact_event" ObjectPath="\Events\Default Work Unit\WoodImpact_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.091610" DurationMax="1.128912">
+				<Event Id="1958629785" Name="WoodImpact_event" ObjectPath="\Events\Default Work Unit\RefinedMaterial\WoodImpact_event" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="1.091610" DurationMax="1.128912">
 					<IncludedMemoryFiles>
 						<File Id="164768963" Language="SFX">
 							<ShortName>Wood Impact 3_3.wav</ShortName>
@@ -203,6 +310,9 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="920026278" Name="ImpactVelocity" ObjectPath="\Game Parameters\Default Work Unit\ImpactVelocity"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
